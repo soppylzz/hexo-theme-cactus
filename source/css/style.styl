@@ -84,6 +84,14 @@ body
     &:hover
       color: $color-link
 
+  h2
+    font-size: 1.4rem
+  h3, h4
+    font-size: 1.2rem
+
+  h5
+    font-size: 1.1rem
+
   h1 a, .h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
     background: none
     color: inherit
@@ -120,8 +128,8 @@ body
 @media (max-width: 480px)
   // smaller margins at smaller screen widths
   .px3
-    padding-right: 1rem
-    padding-left: 1rem
+    padding-right: 1.5rem
+    padding-left: 1.5rem
 
   .my4
     margin-top: 2rem
@@ -150,7 +158,6 @@ body
 pre
   overflow-x: auto
   padding: 10px 15px
-  padding-bottom: 0
   border: 1px dotted $color-border
   border-radius: 4px
   font-size: 13px
@@ -165,9 +172,14 @@ pre
 
 code
   padding: 0 5px
+  margin: 0 2px
   border: 1px dotted $color-border
   border-radius: 2px
   -webkit-border-radius: 2px
+  font-size: $font-size*0.85
+  font-family: $font-family-mono
+  -webkit-box-decoration-break: clone
+  box-decoration-break: clone
 
 .highlight
   overflow-x: auto
